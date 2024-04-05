@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-1 {
+  background: black;
+  width: 100%;
+  height: 200px;
+  position: relative; /* Adicionado para que a posição absoluta da imagem seja relativa a este container */
+  display: flex; /* Adicionado para alinhar elementos filhos horizontalmente */
+  justify-content: center; /* Adicionado para alinhar os elementos filhos horizontalmente */
+  align-items: center; /* Adicionado para alinhar os elementos filhos verticalmente */
+}
+
+.box-1 h1 {
+  color: white;
+  text-align: center;
+}
+
+.img-nav {
+  position: absolute;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.sub-nav {
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  border-top: 1px solid #ccc; 
+  text-align: center; /* Alinha os itens ao centro horizontalmente */
+}
+
+.sub-nav ul {
+  list-style-type: none; 
+}
+
+.sub-nav li {
+  display: inline-block; /* Para que os itens da lista apareçam lado a lado */
+  margin: 0 10px; /* Espaçamento entre os itens */
+}
+
+.sub-nav a {
+  text-decoration: none; 
+  color: #333; 
+  font-weight: bold; 
+}
+
+
+.box-3 {
+  background: rgb(20, 40, 219);
+  float: left;
+  width: 100%;
+  height: 600px;
+}
+
+.box-3 h2 {
+  color: white;
+  text-align: center;
+}
+
+
+.box-5 {
+  background: rgb(90, 20, 219);
+  width: 100%;
+  height: 600px;
+}
+
+.box-5 h1 {
+  color: white;
+  text-align: center;
+}
+
+
+.img-main {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
