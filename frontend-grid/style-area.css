@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    border: 4px solid blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    grid-template-areas:
+        'header header header'
+        'sec1 sec1 sec2'
+        'sec1 sec1 sec3'
+        'artigo1 artigo1 artigo2'
+        'rodape rodape rodape'
+    ;
+}
+
+.container>div {
+    border: 2px solid green;
+    background: lightgreen;
+    font-size: 1.5em;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sec1 {
+    grid-area: sec1;
+}
+
+.sec2 {
+    grid-area: sec2;
+}
+
+.sec3 {
+    grid-area: sec3;
+}
+
+.artigo1 {
+    grid-area: artigo1;
+}
+
+.artigo2 {
+    grid-area: artigo2;
+}
+
+.rodape {
+    grid-area: rodape;
+}
+
+@media screen and (max-width: 820px) {
+    .container {
+        grid-template-areas:
+            'header header header header'
+            'sec1 sec1 sec1 sec1'
+            'sec1 sec1 sec1 sec1'
+            'sec2 sec2 sec3 sec3'
+            'sec2 sec2 sec3 sec3'
+            'artigo1 artigo1 artigo2 artigo2'
+            'rodape rodape rodape rodape'
+    }
+
+    .container>div {
+        border: 2px solid blue;
+        background: rgb(144, 203, 238);
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .container {
+        grid-template-areas:
+            'header'
+            'sec1'
+            'sec2'
+            'sec3'
+            'artigo1'
+            'artigo2'
+            'rodape'
+    }
+
+    .container>div {
+        border: 2px solid purple;
+        background: lightpink;
+    }
+}
+
+@media print {
+    .container>div {
+        border: 2px solid black;
+        background: 2hite;
+    }
+}
